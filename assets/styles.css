@@ -1,0 +1,88 @@
+/* Styles for the quiz container */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 24px;
+}
+
+/* Styles for the start button */
+#start-button {
+    background-color: #007BFF;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#start-button:hover {
+    background-color: #0056b3;
+}
+
+/* Styles for the quiz questions and choices */
+#quiz-container {
+    display: none;
+}
+
+#question {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+#choices {
+    list-style-type: none;
+    padding: 0;
+}
+
+#choices li {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#choices li:hover {
+    background-color: #f2f2f2;
+}
+
+/* Styles for the timer */
+#timer {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* Styles for initials input and submit button */
+#initials,
+#submit-score {
+    display: none;
+    font-size: 18px;
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#submit-score {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submit-score:hover {
+    background-color: #0056b3;
+}
