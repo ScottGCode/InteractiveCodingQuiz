@@ -1,4 +1,3 @@
-/* Styles for the quiz container */
 .container {
     max-width: 600px;
     margin: 0 auto;
@@ -14,7 +13,6 @@ h1 {
     font-size: 24px;
 }
 
-/* Styles for the start button */
 #start-button {
     background-color: #007BFF;
     color: #fff;
@@ -29,7 +27,6 @@ h1 {
     background-color: #0056b3;
 }
 
-/* Styles for the quiz questions and choices */
 #quiz-container {
     display: none;
 }
@@ -58,31 +55,8 @@ h1 {
     background-color: #f2f2f2;
 }
 
-/* Styles for the timer */
 #timer {
     font-size: 18px;
     margin-top: 20px;
-}
-
-/* Styles for initials input and submit button */
-#initials,
-#submit-score {
-    display: none;
-    font-size: 18px;
-    margin: 20px 0;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-#submit-score {
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#submit-score:hover {
-    background-color: #0056b3;
+    color: red; 
 }
