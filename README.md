@@ -12,7 +12,7 @@ Deploy the URL to access the coding quiz. You can also follow the link to the Gi
 
 Once the URL is deployed you will see a "Start Quiz" button. Click the button to begin the quiz. Answer the questions as quickly as you can to avoid running out of time. For ever incorrect answer time will be deducted and your score will be saved locally at the end of the quiz using your initials. 
 
-![Interactive Coding Quiz Screenshot](/assets/Images/Screenshot%202023-09-18%20at%2011.57.14%20PM.png)
+![Interactive Coding Quiz Screenshot](/assets/Images/Screenshot%202023-09-19%20at%2012.32.33%20AM.png)
 
 ## Credits
 

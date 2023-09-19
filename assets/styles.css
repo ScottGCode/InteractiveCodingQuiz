@@ -1,5 +1,11 @@
+body {
+    font-family: 'Bebas Neue', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Satisfy', cursive;
+}
+
 .container {
-    max-width: 600px;
+    max-width: 1000px;
     margin: 0 auto;
     text-align: center;
     padding: 20px;
@@ -11,10 +17,11 @@
 
 h1 {
     font-size: 24px;
+    color: #7D3C98; 
 }
 
 #start-button {
-    background-color: #007BFF;
+    background-color: #7D3C98;
     color: #fff;
     font-size: 18px;
     padding: 10px 20px;
@@ -24,7 +31,35 @@ h1 {
 }
 
 #start-button:hover {
-    background-color: #0056b3;
+    background-color: black;
+}
+
+#show-scores {
+    background-color: #7D3C98 ;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#show-scores:hover {
+    background-color: black;
+}
+
+#submit-score {
+    background-color: #7D3C98 ;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submit-score:hover {
+    background-color: black;
 }
 
 #quiz-container {
@@ -59,4 +94,14 @@ h1 {
     font-size: 18px;
     margin-top: 20px;
     color: red; 
+}
+
+#initials {
+    background-color: #7D3C98 ;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }

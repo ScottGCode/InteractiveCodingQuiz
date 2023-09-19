@@ -1,7 +1,8 @@
+// Defined Questions and Answers.
 var questions = [
     {
         question: "What is HTML?",
-        choices: ["Hyper Text Markup Language", "High-Level Text Markup Language", "Hyperlink and Text Markup Language", "Hyper Text Makeup Language"],
+        choices: ["Hyper Text Markup Language", "High-Level Marketing Language", "Hyperlink and Text Makeup", "Hyper Tough Makeup Language"],
         correctAnswer: 0
     },
     
@@ -21,10 +22,17 @@ var questions = [
             question: "CDN stands for Content Delivery Network",
             choices: ["true", "false"],
             correctAnswer: 0
+    },
+
+    {
+            question: "What is an API?",
+            choices: ["A Playground Interaction", "Application Programming Interface", "Application Professionals Instruction", "Apparent Parents International"],
+            correctAnswer: 1
     }
     
 ];
 
+//Defined quiz variables and API's
 var startButton = document.getElementById('start-button');
 var quizContainer = document.getElementById('quiz-container');
 var questionElement = document.getElementById('question');
@@ -39,6 +47,7 @@ let timeRemaining = 60;
 let score = 0;
 let timerInterval;
 
+//Begin Quiz Function
 function startQuiz() {
     startButton.style.display = 'none';
     quizContainer.style.display = 'block';
@@ -62,7 +71,7 @@ function loadQuestion(index) {
         endQuiz();
     }
 }
-
+//Answer submition and time deduction function.
 function checkAnswer(selectedIndex) {
     const currentQuestion = questions[currentQuestionIndex];
     if (selectedIndex === currentQuestion.correctAnswer) {
@@ -77,6 +86,7 @@ function checkAnswer(selectedIndex) {
     loadQuestion(currentQuestionIndex);
 }
 
+//Timer function displayed on webpage.
 function startTimer() {
     timerInterval = setInterval(() => {
         timeRemaining--;
@@ -87,18 +97,17 @@ function startTimer() {
     }, 1000);
 }
 
-// Function to end the quiz
 function endQuiz() {
     clearInterval(timerInterval);
     quizContainer.style.display = 'none';
     initialsInput.style.display = 'block';
     submitScoreButton.style.display = 'block';
 }
-
+//Event listener upon a click to change HTML elements on the page to display quiz questions. 
 startButton.addEventListener('click', startQuiz);
 submitScoreButton.addEventListener('click', () => {
+//Enter Initials and Display Score.    
     var initials = initialsInput.value;
-    // Save the score and initials to localStorage
     var showScores = JSON.parse(localStorage.getItem('showScores')) || [];
     scores.push({ initials, score });
     localStorage.setItem('showScores', JSON.stringify(showScores));
